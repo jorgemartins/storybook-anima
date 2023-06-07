@@ -1,0 +1,292 @@
+{
+  "$extensions": {
+    "com.interplayapp.version": "0.0.1"
+  },
+  "colors": {
+    "$type": "color",
+    "base": {
+      "$description": "Base tokens contain the raw color scale that is used throughout your app. Reference these tokens in other tokens to create consistency through your product and across themes.",
+      "white": {
+        "$description": "",
+        "$value": "#ffffff"
+      },
+      "gray1": {
+        "$value": "#f0f0f0"
+      },
+      "gray2": {
+        "$value": "#F0F0F0"
+      },
+      "gray3": {
+        "$value": "#DDDDDD"
+      },
+      "gray4": {
+        "$value": "#AAAAAA"
+      },
+      "gray5": {
+        "$value": "#808080"
+      },
+      "gray6": {
+        "$value": "#666666"
+      },
+      "gray7": {
+        "$value": "#333333"
+      },
+      "gray8": {
+        "$value": "#222222"
+      },
+      "black": {
+        "$value": "#000000"
+      },
+      "purple-lightest": {
+        "$value": "#EDEBFE"
+      },
+      "purple-lighter": {
+        "$value": "#9785FF"
+      },
+      "purple": {
+        "$value": "#7D68FD"
+      },
+      "purple-darker": {
+        "$value": "#5135F8"
+      },
+      "purple-darkest": {
+        "$value": "#332685"
+      }
+    },
+    "background": {
+      "$type": "color",
+      "primary": {
+        "$value": "{colors.base.white}"
+      },
+      "secondary": {
+        "$value": "{colors.base.gray1}"
+      },
+      "tertiary": {
+        "$value": "{colors.base.gray2}"
+      },
+      "accent": {
+        "$value": "{colors.base.purple-lighter}"
+      }
+    },
+    "text": {
+      "$type": "color",
+      "primary": {
+        "$value": "{colors.base.gray8}"
+      },
+      "secondary": {
+        "$value": "{colors.base.gray6}"
+      },
+      "accent": {
+        "$value": "{colors.base.purple}"
+      },
+      "inverse": {
+        "$value": "{colors.base.white}"
+      }
+    }
+  },
+  "Typography": {
+    "Font": {
+      "$type": "typography",
+      "S-Bold": {
+        "$value": {
+          "fontFamily": "{Typography.Font Family.sans}",
+          "fontSize": "{Typography.Font Scale.S}",
+          "fontWeight": "{Typography.Font-Weight.Bold}",
+          "letterSpacing": "0",
+          "lineHeight": "{Typography.Line Height.S}"
+        }
+      },
+      "S-Regular": {
+        "$value": {
+          "fontFamily": "{Typography.Font Family.sans}",
+          "fontSize": "{Typography.Font Scale.S}",
+          "fontWeight": "{Typography.Font-Weight.Regular}",
+          "letterSpacing": "0",
+          "lineHeight": "{Typography.Line Height.S}"
+        }
+      },
+      "M-Bold": {
+        "$value": {
+          "fontFamily": "{Typography.Font Family.sans}",
+          "fontSize": "{Typography.Font Scale.M}",
+          "fontWeight": "{Typography.Font-Weight.Bold}",
+          "letterSpacing": "0",
+          "lineHeight": "{Typography.Line Height.M}"
+        }
+      },
+      "M-Regular": {
+        "$value": {
+          "fontFamily": "{Typography.Font Family.sans}",
+          "fontSize": "{Typography.Font Scale.M}",
+          "fontWeight": "{Typography.Font-Weight.Regular}",
+          "letterSpacing": "0",
+          "lineHeight": "{Typography.Line Height.M}"
+        }
+      },
+      "L-Bold": {
+        "$value": {
+          "fontFamily": "{Typography.Font Family.sans}",
+          "fontSize": "{Typography.Font Scale.L}",
+          "fontWeight": "{Typography.Font-Weight.Bold}",
+          "letterSpacing": "0",
+          "lineHeight": "{Typography.Line Height.L}"
+        }
+      },
+      "L-Regular": {
+        "$value": {
+          "fontFamily": "{Typography.Font Family.sans}",
+          "fontSize": "{Typography.Font Scale.L}",
+          "fontWeight": "{Typography.Font-Weight.Regular}",
+          "letterSpacing": "0",
+          "lineHeight": "{Typography.Line Height.L}"
+        }
+      },
+      "XL-Bold": {
+        "$value": {
+          "fontFamily": "{Typography.Font Family.sans}",
+          "fontSize": "{Typography.Font Scale.XL}",
+          "fontWeight": "{Typography.Font-Weight.Bold}",
+          "letterSpacing": "0",
+          "lineHeight": "{Typography.Line Height.XL}"
+        }
+      },
+      "XL-Regular": {
+        "$value": {
+          "fontFamily": "{Typography.Font Family.sans}",
+          "fontSize": "{Typography.Font Scale.XL}",
+          "fontWeight": "{Typography.Font-Weight.Regular}",
+          "letterSpacing": "0",
+          "lineHeight": "{Typography.Line Height.XL}"
+        }
+      }
+    },
+    "Font Family": {
+      "sans": {
+        "$type": "fontFamily",
+        "$value": "\"Inter\", sans-serif"
+      }
+    },
+    "Font Scale": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.interplayapp.usedFor": [
+          "fontSize"
+        ]
+      },
+      "S": {
+        "$value": "0px"
+      },
+      "M": {
+        "$value": "0.8125rem"
+      },
+      "L": {
+        "$value": "1.5rem"
+      },
+      "XL": {
+        "$value": "2rem"
+      }
+    },
+    "Line Height": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.interplayapp.usedFor": [
+          "lineHeight"
+        ]
+      },
+      "S": {
+        "$value": "1.25rem"
+      },
+      "M": {
+        "$value": "1.5rem"
+      },
+      "L": {
+        "$value": "2rem"
+      },
+      "XL": {
+        "$value": "2.5rem"
+      }
+    },
+    "Font-Weight": {
+      "$type": "number",
+      "Regular": {
+        "$value": "400"
+      },
+      "Bold": {
+        "$value": "700"
+      }
+    }
+  },
+  "Border": {
+    "Border Radius": {
+      "$type": "dimension",
+      "S": {
+        "$value": "{Space.Scale.1}"
+      },
+      "M": {
+        "$value": "{Space.Scale.2}"
+      },
+      "L": {
+        "$value": "{Space.Scale.4}"
+      },
+      "XL": {
+        "$value": "{Space.Scale.5}"
+      },
+      "round": {
+        "$value": "100px"
+      }
+    },
+    "Border Styles": {
+      "$type": "border",
+      "light": {
+        "$value": {
+          "color": "{colors.base.gray3}",
+          "style": "solid",
+          "width": "1px"
+        }
+      },
+      "heavy": {
+        "$value": {
+          "color": "{colors.base.gray3}",
+          "style": "solid",
+          "width": "2px"
+        }
+      }
+    }
+  },
+  "Space": {
+    "Scale": {
+      "0": {
+        "$value": "0px"
+      },
+      "1": {
+        "$value": "0.25rem"
+      },
+      "2": {
+        "$value": "0.5rem"
+      },
+      "3": {
+        "$value": "1.75rem"
+      },
+      "4": {
+        "$value": "1rem"
+      },
+      "5": {
+        "$value": "1.5rem"
+      },
+      "6": {
+        "$value": "2rem"
+      },
+      "7": {
+        "$value": "2.5rem"
+      },
+      "8": {
+        "$value": "3rem"
+      },
+      "9": {
+        "$value": "4rem"
+      },
+      "$description": "Use this space scale for padding, margin and gap to create a harmonious rhythm in your design.",
+      "$type": "dimension"
+    }
+  }
+}
